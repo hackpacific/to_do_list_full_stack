@@ -1,2 +1,13 @@
-<h1>StaticPages#index</h1>
-<p>Find me in app/views/static_pages/index.html.erb</p>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-11 col-md-8 col-lg-5 mx-auto mt-4 py-2 px-4 border border-white rounded">
+      <h1 class="text-center mt-4">To Do List</h1>
+      <form class="todo-input-section row p-3">
+        <input placeholder="add task" class="task-input col-9 form-control" required />
+        <button id="btn-add" class="btn btn-success col-3">create</button>
+      </form>
+      <div class="row p-3" id="tasks"></div>
+
+    </div>
+  </div>
+</div>
