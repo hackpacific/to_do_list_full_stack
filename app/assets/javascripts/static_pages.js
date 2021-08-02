@@ -3,7 +3,7 @@ $(document).on("turbolinks:load", function () {
       indexTasks(function (response) {
   
   
-      htmlString = response.tasks.map(function(task) {
+      values = response.tasks.map(function(task) {
 
         return "\
           <div class='col-12 w-100 mb-3 p-3 border rounded align-items-center task d-flex justify-content-between' data-id='" + task.id + "'>" +
@@ -25,7 +25,7 @@ $(document).on("turbolinks:load", function () {
         $('task-input').empty();
       });
   
-      $("#tasks").html(htmlString);    
+      $("#tasks").html(values);    
   
       var completeButtons = Array.from(document.querySelectorAll("input.checkbox"));
    

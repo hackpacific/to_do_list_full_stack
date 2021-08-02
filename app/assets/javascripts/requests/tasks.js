@@ -40,12 +40,8 @@ $.ajaxSetup({
     var request = {
       type: 'DELETE',
       url: 'api/tasks/' + taskId + '?api_key=1',
-      success: function (response) {
-        console.log(response);
-      },
-      error: function (request, errorMsg) {
-        console.log(request, errorMsg);
-      }
+      success: successCB,
+      error: errorCB
     }
     $.ajax(request);
     location.reload();
@@ -56,12 +52,8 @@ $.ajaxSetup({
     var request = {
       type: 'PUT',
       url: 'api/tasks/' + taskId + '/mark_complete?api_key=1',
-      success: function (response) {
-        console.log(response);
-      },
-      error: function (request, errorMsg) {
-        console.log(request, errorMsg);
-      }
+      success: successCB,
+      error: errorCB
     }
     $.ajax(request);
   };
@@ -71,12 +63,8 @@ $.ajaxSetup({
     var request = {
       type: 'PUT',
       url: 'api/tasks/' + taskId + '/mark_active?api_key=1',
-      success: function (response) {
-        console.log(response);
-      },
-      error: function (request, errorMsg) {
-        console.log(request, errorMsg);
-      }
+      success: successCB,
+      error: errorCB,
     }
     $.ajax(request);
   };

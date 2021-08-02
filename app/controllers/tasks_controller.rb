@@ -1,4 +1,4 @@
-module api
+module Api
   class TasksController < ApplicationController
     before_action :validate_user
   
@@ -80,5 +80,6 @@ module api
         return false
       end
     end
-  end  
+  end
+  
 end

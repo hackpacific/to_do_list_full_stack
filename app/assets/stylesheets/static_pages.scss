@@ -1,3 +1,21 @@
-// Place all the styles related to the static_pages controller here.
+// Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.nav-link {
+    font-family: sans-serif;
+    font-size: inherit;
+}
+
+.navbar-brand {
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+#tasks {
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin: 0 auto;
+}
